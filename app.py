@@ -181,7 +181,7 @@ def create_app(test_config=None):
     if new_title:
       movie.name = data.get('title',None)
     if new_release:
-      movie.date_release = data.get('release_date', None)
+      movie.release_date = data.get('release_date', None)
 
     if new_title or new_release:
         movie.update()
